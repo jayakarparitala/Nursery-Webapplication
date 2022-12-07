@@ -1,0 +1,28 @@
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<title> Login </title>
+			<link rel="stylesheet" href="../static/style.css">
+		</head>
+		<body  style="background-image:url('../static/images/p40.jpeg');background-position: center center;overflow:hidden;background-size: 100% 100%">
+		  <br><br><br>
+			<div class="logincontent" align="center" style="background-color:whitesmoke;margin-left: 300px;">
+				<div class="logintop">
+					<h1>Login</h1>
+				</div>
+				<br>
+				<div class="loginbottom">
+				  <form action="{{ url_for('signin')}}" method="post" autocomplete="off"><br>
+				<div class="msg">{{ msg }}</div>
+				<input type="text" name="user_id" placeholder="Enter phone number" class="textbox" id="mail_id" required><br><br>
+				<input type="password" name="password" placeholder="Enter Password" class="textbox" id="passwd" required><br><br>
+				<input type="submit" class="btn" value="Login">
+				  </form>
+				  <br>
+				  <br>
+				  <p class="worddark">New to this page? <a class="worddark" href="{{ url_for('signup')}}">Register here</a></p>
+				</div>
+			</div>
+		</body>
+	</html>
+	

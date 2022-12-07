@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> updateprofile</title>
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
+  <body  style="background-image:url('../static/images/p50.jpeg');background-position: center center;overflow:hidden;background-size: 100% 100%">
+    <br><br><br>
+    <div class="logincontent" align="center" style="background-color:whitesmoke;margin-left: 900px;height: 400px;">
+      <div class="logintop">
+        <h1>Update profile</h1>
+      </div>
+      <br>
+      <div class="loginbottom">
+		
+      
+              <form action="{{ url_for('updateprofile')}}" method="post" autocomplete="off"><br>
+            <div >{{ msg }}</div>
+            <input type="text" name="name" placeholder="Enter Your name"  class="textbox" id="mail_id" required><br><br>
+            <input type="password" name="password" placeholder="Enter Your Password"  class="textbox" id="mail_id" required><br><br>
+            <input type="text" name="gender" placeholder="Enter Your gender"  class="textbox" id="mail_id" required><br><br>
+            <input type="text" name="address" placeholder="Enter Your address"  class="textbox" id="mail_id" required><br><br>
+            <input type="submit" class="btn" value="update">
+              </form>
+              
+            </div>
+          </div>
+          </body>
+          </html>            
+             
+
+           
+    </body>
+</html>
+
+
+
+
